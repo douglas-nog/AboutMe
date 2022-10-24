@@ -1,0 +1,99 @@
+body{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    /*background-color: rgb(245, 245, 229);*/
+    background-color: whitesmoke;
+    }
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 20px;
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+h1, h3{
+    
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }   
+
+#foto{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+}
+
+#fotos{
+    width: 250px;
+    height: 250px;
+}
+
+#principal{
+    display: flex;
+    align-items: center;
+    background-color: lightblue;
+    
+    }
+#secundaria{
+    display: flex;
+    align-items: center;
+    background-color: rgba(107, 102, 102, 0.192);
+}
+    
+#imagem1, #imagem2{
+    width: 160px;
+    height: 160px;
+}
+
+#quadro1, #quadro2, #quadro3{
+        width: 407px;
+        height: 320px;
+        background-color: white;
+        color: black;
+        margin: 22px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+#quadro1:hover, #quadro2:hover, #quadro3:hover{
+        color: black;
+        background-color: beige;
+        display: inline;
+        cursor: pointer;
+    }
+
+#about{
+    margin-top: 25px;
+}
+
+
+
+article{
+    margin-top: 25px;
+    font-size: 25px;
+    /*border: solid black 1px;*/
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+footer{
+    height: 150px;
+    width: 1500px;
+    color: black;
+    background-color: darkgray;
+    padding: 10px;
+    margin: 0%;
+    font-family: sans-serif;
+    text-align: right;
+
+}
+
+@media (max-width: 600px){
+    #principal, #secundaria{
+        flex-direction: column;
+    }
+}
